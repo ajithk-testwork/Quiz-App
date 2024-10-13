@@ -1,0 +1,152 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.app_container{
+  width: 100%;
+  background-color: #d7dfe8;
+  border-radius: 5px;
+  position: absolute;
+}
+.container{
+  background: url("./assets/bg.png") no-repeat;
+  background-size: cover;
+  background-color: #212f3d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: "Rubik", sans-serif;
+  position: relative;
+  width: 100%;
+  background-color: #17202a;
+  /* border-radius: 5px; */
+}
+.navbar{
+  position: relative;
+}
+.header-container{
+  position: absolute;
+  display: flex;
+  width: 100%;
+}
+.logo{
+  align-items: start;
+}
+
+.quiz_wrapper{
+  padding: 2rem;
+  color: #fff;
+  text-align: center;
+}
+
+.quiz_wrapper h3{
+  font-weight: lighter;
+  font-size: 4rem;
+}
+
+.quiz_wrapper h2{
+  font-size: 3rem;
+}
+
+.btn{
+  outline: none;
+  border: none;
+  background-color: #229954;
+  color: #fff;
+  padding: 0.7rem 2rem;
+  font-family: inherit;
+  cursor: pointer;
+  border-radius: 2px;
+  font-size: 1 rem;
+}
+
+.btn:hover{
+  background-color: #1f5e28;
+}
+
+.quiz_wrapper p{
+  margin: 1rem 0;
+}
+
+.quiz{
+  width: 720px;
+}
+
+.quiz .quiz-header{
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  color: #fff;
+  background-color: #17202aaa;
+  padding: 2rem;
+}
+
+.quiz .quiz-body{
+  padding: 1rem;
+}
+
+.quiz .quiz-body li{
+  list-style-type: none;
+  margin: 1rem 0;
+  color: #fff;
+  font-size: 1rem;
+  background-color: #212f3d;
+  padding: 1rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.quiz .quiz-body li:hover{
+  margin-left: 1rem;
+}
+
+.quiz .quiz-body li.correct{
+  background-color: lightgreen;
+  margin-left: 1rem;
+  cursor: not-allowed;
+} 
+
+.quiz .quiz-body li.wrong{
+  background-color: lightcoral;
+  cursor: not-allowed;
+}
+
+
+
+.quiz .quiz-footer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  color: #fff;
+  padding: 1rem 2rem;
+}
+.finish-screen{
+  padding: 2rem;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.finish-screen p{
+  font-size: 2rem;
+}
+
+.finish-screen button{
+  margin: 1rem 0;
+}
+
+.correct {
+  background-color: lightgreen; /* Color for correct answers */
+}
+
+.wrong {
+  background-color: lightcoral; /* Color for wrong answers */
+}
+
+.skipped {
+  background-color: lightyellow; /* Color for skipped questions */
+}
